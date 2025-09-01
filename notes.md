@@ -17,6 +17,11 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
         ...       # Other markdown pages, images and other files.
 
 
+## Link
+
+https://diogo-costa-silva.github.io/dev-notes/
+
+
 
 ## Commands
 
