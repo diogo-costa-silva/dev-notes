@@ -3,5 +3,7 @@
 Bem-vindo às minhas notas de desenvolvimento.  
 Usa a pesquisa no topo para encontrares comandos/snippets.
 
+Adicionado algo.
+
 !!! note "Estrutura"
     A navegação reflete as subpastas de `docs/`.
