@@ -1,51 +1,52 @@
 # 🛠️ Diogo Dev Notes & Templates
 
-Bem-vindo à minha coleção pessoal de templates e guias de desenvolvimento! Este é o meu arsenal de configurações, snippets e workflows que uso nos meus projetos diários.
+Bem-vindo à minha coleção pessoal de templates e guias de desenvolvimento! Este é o meu arsenal organizado por área de expertise, com configurações, snippets e workflows que uso nos meus projetos diários.
 
 > **💡 Tip:** Usa a pesquisa no topo para encontrares rapidamente comandos específicos ou snippets.
 
-## 🚀 [Configuração Inicial](setup/index.md)
-Setup essencial para configurar um ambiente de desenvolvimento do zero:
-- **[🍎 macOS Setup](setup/macos/index.md)** - Configuração específica para macOS
-  - **[🍺 Homebrew Apps](setup/macos/homebrew/homebrew.md)** - Lista curada de aplicações essenciais
-- **[🤖 AI Tools Setup](setup/ai_tools/index.md)** - Configuração de ferramentas de IA
-  - **[🦙 Ollama AI Setup](setup/ai_tools/ollama.md)** - Modelos de linguagem locais
+## 📊 [Data Analysis](data_analysis/index.md)
+Metodologias estruturadas e templates para projetos completos de análise de dados:
+- **[📋 Analysis Methodology](data_analysis/methodology/index.md)** - Processo estruturado e templates
+- **[🏗️ Data Modeling](data_analysis/modeling/index.md)** - Conceitos e práticas de modelação  
+- **[💾 SQL Templates](data_analysis/sql/index.md)** - Queries e templates SQL para análise
 
-## 💻 [Linguagens de Programação](languages/index.md)
-Guias específicos e workflows para cada linguagem que uso:
-- **🐍 Python**
-  - [Configuração Geral](languages/python/python.md) - Setup completo do ambiente Python
-  - [UV Package Manager](languages/python/uv.md) - Gestão moderna de projetos Python
-  - [Workflow Completo](languages/python/python_workflow.md) - Do setup ao deploy
-- **🟢 Node.js**
-  - [Configuração Node.js](languages/node/node.md) - Setup do ambiente Node.js
+## 🐍 [Python Development](python/index.md)
+Setup moderno e workflows para desenvolvimento Python:
+- **[⚡ UV Complete Guide](python/uv.md)** - Gestor de pacotes Python ultra-rápido
+- **[🐍 Python Setup](python/python.md)** - Configuração completa do ambiente
+- **[🔄 Complete Workflow](python/python_workflow.md)** - Do setup ao deploy
 
-## 🛠️ [Ferramentas de Desenvolvimento](tools/index.md)
-Configurações para as ferramentas que uso diariamente:
-- **📚 [Git Configuration](tools/git/git.md)** - Configuração completa e aliases úteis
-- **🤖 [Claude Code](tools/claude_code/index.md)** - Guias e configurações para Claude Code
-  - [Comandos Essenciais](tools/claude_code/cc_commands.md) - Lista de comandos mais úteis
-  - [Guidelines & Rules](tools/claude_code/cc_rules.md) - Melhores práticas de uso
-  - [MySQL MCP Setup](tools/claude_code/mysql_mcp_setup.md) - Configuração de base de dados
-- **🤖 [AI Development Tools](tools/ai_tools/index.md)** - Ferramentas de IA para desenvolvimento
-  - **💬 [ChatGPT MCPs](tools/ai_tools/chatgpt/MCPs_GPT.md)** - Configuração de Model Context Protocol
+## 🟢 [Node.js Development](node/index.md)
+Setup completo e workflows modernos para Node.js:
+- **[📦 Node.js Configuration](node/node.md)** - Setup completo do ambiente Node.js moderno
+- **Package management** com pnpm, npm e performance comparison
+- **Modern JavaScript stack** com TypeScript e tooling
 
-## 📊 [Análise de Dados](data_analysis/index.md)
-Templates e metodologias para projetos completos de análise de dados:
-- **📋 [Analysis Methodology](data_analysis/methodology/index.md)** - Processo estruturado e templates
-  - [Metodologia Completa](data_analysis/methodology/index.md) - Guia metodológico detalhado
-  - [Project Checklist](data_analysis/methodology/checklist.md) - Lista de verificação
-- **🏗️ [Data Modeling](data_analysis/modeling/index.md)** - Conceitos e práticas de modelação
-  - [Data Modeling Concepts](data_analysis/modeling/data_modeling/data_modeling.md) - Conceitos fundamentais
-- **💾 [SQL Templates](data_analysis/sql/index.md)** - Queries e templates SQL para análise
+## 🍎 [macOS Development Setup](macos/index.md)
+Configuração e otimização do macOS para desenvolvimento:
+- **[🍺 Homebrew Complete Setup](macos/homebrew/homebrew.md)** - Lista curada de aplicações essenciais
+- **System optimization** e tweaks para produtividade
+- **Security & privacy** considerations para desenvolvimento
+
+## 📚 [Git Configuration & Workflows](git/index.md)
+Configuração avançada e workflows modernos:
+- **[📚 Git Complete Setup](git/git.md)** - Configuração completa com aliases
+- **Advanced workflows** (GitHub Flow, GitFlow)
+- **Commit best practices** e conventional commits
+
+## 🤖 [AI Tools for Development](ai_tools/index.md)
+Ferramentas de IA integradas no workflow de desenvolvimento:
+- **[🤖 Claude Code](ai_tools/claude_code/index.md)** - Guias e configurações avançadas
+- **[💬 ChatGPT MCPs](ai_tools/chatgpt/MCPs_GPT.md)** - Model Context Protocol setup
+- **[🦙 Ollama Local AI](ai_tools/ollama.md)** - Modelos locais para privacidade
 
 ---
 
 ## 🎯 Como Usar Este Site
 
 1. **🔍 Pesquisa rápida** - Usa a barra de pesquisa para encontrar comandos específicos
-2. **📂 Navega por categoria** - Explora cada secção usando o menu lateral  
-3. **📋 Copia e adapta** - Todos os templates estão prontos para usar nos teus projetos
-4. **🔄 Contribui** - Encontraste um bug ou tens uma sugestão? Abre um issue no GitHub!
+2. **📂 Navegar por categoria** - Explora cada área usando o menu lateral  
+3. **📋 Copiar e adaptar** - Todos os templates estão prontos para usar nos teus projetos
+4. **🔄 Contribuir** - Encontraste um bug ou tens uma sugestão? Abre um issue no GitHub!
 
-> **⚡ Quick Access:** Este site é o meu "cheat sheet" pessoal. Se estás a procurar algo específico, a pesquisa é o teu melhor amigo!
+> **⚡ Quick Access:** Este site é o meu "cheat sheet" pessoal organizado por área de expertise. Se estás à procura de algo específico, a pesquisa é o teu melhor amigo!

@@ -1,0 +1,6 @@
+title: Python Development
+nav:
+  - index.md
+  - python.md
+  - uv.md
+  - python_workflow.md

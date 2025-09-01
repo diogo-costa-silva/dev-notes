@@ -1,6 +1,8 @@
 nav:
   - index.md
-  - setup
-  - languages  
-  - tools
   - data_analysis
+  - python
+  - node
+  - macos
+  - git
+  - ai_tools

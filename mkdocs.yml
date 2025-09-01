@@ -91,7 +91,9 @@ extra:
 
 nav:
   - Home: index.md
-  - Setup: setup/index.md
-  - Languages: languages/index.md
-  - Tools: tools/index.md
   - Data Analysis: data_analysis/index.md
+  - Python: python/index.md
+  - Node.js: node/index.md
+  - macOS: macos/index.md
+  - Git: git/index.md
+  - AI Tools: ai_tools/index.md
