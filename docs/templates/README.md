@@ -1,35 +1,36 @@
 # Dev Templates & Configurations
 
-## 🍎 MacOS Setup
-- [🍺 HomeBrew Apps](./homebrew/homebrew.md)
+Bem-vindo à minha wiki de desenvolvimento! Esta é uma coleção organizada de templates, configurações e guias que uso nos meus projetos.
 
-## 📚 Documentation
+## 📋 Organização
 
-### Development Environment Setup
-- [📚 Git Configuration](./git/git.md)
-- [🐑 Ollama AI Setup](./ollama.md)
+A wiki está organizada nas seguintes secções principais:
 
-### Language & Runtime Configuration
-- [🐍 Python Configuration](./python/python.md)
-- [🐍 UV Python Project Setup](./python/uv.md)
-- [🐍 Python Project Workflow](./python/python_workflow.md)
-- [🟢 Node Configuration](./node/node.md)
+### 🚀 [Configuração Inicial](setup/)
+Setup essencial para ambiente de desenvolvimento
+- Configuração do MacOS com Homebrew
+- Setup de ferramentas de AI/ML como Ollama
 
-## 🤖 Claude Code
-- [⌨️ Claude Code Commands](./Claude%20Code/cc_commands.md)
-- [📋 Claude Code Guidelines](./Claude%20Code/cc_rules.md)
-- [🗄️ MySQL MCP Setup](./Claude%20Code/mysql_mcp_setup.md)
+### 💻 [Linguagens de Programação](languages/)  
+Guias específicos para cada linguagem
+- Python: configuração, UV package manager, workflows
+- Node.js: setup e configuração
 
-## 📊 Data Analysis & Modeling
+### 🛠️ [Ferramentas de Desenvolvimento](tools/)
+Configurações para ferramentas essenciais
+- Git: configuração completa
+- Claude Code: comandos e melhores práticas  
+- ChatGPT: configuração de MCPs
 
-### Data Analysis Projects
-- [📈 Data Analysis Methodology Guide](./data_analysis/README.md)
-- [✅ Data Analysis Checklist](./data_analysis/checklist.md)
+### 📊 [Análise de Dados](data/)
+Resources para projetos de dados
+- Metodologias de análise
+- Modelação de dados
+- Templates SQL
 
-### Data Modeling
-- [🏗️ Data Modeling Concepts](./Data%20Modeling/data_modeling.md)
+### 🎨 [Assets](assets/)
+Recursos partilhados como imagens e ficheiros auxiliares
 
-### SQL Templates & Resources
-- [📊 SQL Template](./sql/template.sql)
-- [🔗 MySQL Connection Session](./sql/mysql-conn.session.sql)
-- [📝 SQL Queries & Examples](./sql/queries.sql)
+---
+
+> **💡 Dica:** Use a navegação lateral para explorar cada secção em detalhe!

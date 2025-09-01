@@ -33,6 +33,8 @@ source .venv/bin/activate
 
 ```bash
 uv add mkdocs-material pymdown-extensions
+uv add mkdocs-awesome-pages-plugin mkdocs-section-index
+
 uv run mkdocs new .
 ```
 
@@ -40,6 +42,9 @@ uv run mkdocs new .
 
 git submodule add https://github.com/diogo-costa-silva/dev-templates.git docs/dev-templates
 git submodule update --init --recursive
+
+
+uv run mkdocs build
 
 ```
 

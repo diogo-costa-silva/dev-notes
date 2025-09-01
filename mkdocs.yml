@@ -6,26 +6,82 @@ theme:
   name: material
   language: pt
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - navigation.tracking
     - content.code.copy
+    - content.code.select
+    - content.code.annotate
     - search.suggest
     - search.highlight
+    - search.share
     - toc.integrate
   palette:
-    - scheme: default
-    - scheme: slate
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 plugins:
-  - search
+  - search:
+      lang: pt
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+  - awesome-pages
+  - section-index
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
+      title: Nesta página
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
 
 repo_url: https://github.com/diogo-costa-silva/dev-notes
 edit_uri: ""   # desativa o botão "Edit this page"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/diogo-costa-silva
+
+# Navegação será gerida automaticamente pelo awesome-pages plugin
+# nav:
