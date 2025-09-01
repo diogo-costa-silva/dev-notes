@@ -77,10 +77,8 @@ extra:
       link: https://github.com/diogo-costa-silva
 
 nav:
-  - Início: index.md
-  - Templates:
-      - Visão Geral: guides/index.md
-      - Setup: guides/setup/index.md
-      - Linguagens: guides/languages/index.md
-      - Ferramentas: guides/tools/index.md
-      - Dados: guides/data/index.md
+  - Home: index.md
+  - Setup: setup/index.md
+  - Languages: languages/index.md
+  - Tools: tools/index.md
+  - Data: data/index.md

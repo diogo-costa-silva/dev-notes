@@ -35,7 +35,7 @@ uv add mkdocs-material \
 uv run mkdocs new .
 
 # Criar estrutura de diretórios
-mkdir -p docs/guides/{setup,languages,tools,data,assets}
+mkdir -p docs/{setup,languages,tools,data,assets}
 ```
 
 ## ⚙️ Configuração
@@ -147,13 +147,13 @@ nav:
   - languages
   - tools
   - data
-  - assets" > docs/guides/.pages
+  - assets" > docs/.pages
 
 # Para cada subcategoria
 echo "title: Configuração Inicial
 nav:
   - index.md
-  - ..." > docs/guides/setup/.pages
+  - ..." > docs/setup/.pages
 ```
 
 ## 🌐 Deploy & GitHub Pages
@@ -254,7 +254,10 @@ my-dev-wiki/
 ├── docs/
 │   ├── index.md                 # Página principal
 │   ├── .pages                   # Configuração navegação raiz
-│   └── guides/
+├── setup/
+│   ├── languages/
+│   ├── tools/
+│   └── data/
 │       ├── index.md            # Overview templates
 │       ├── .pages              # Configuração navegação
 │       ├── setup/              # Configurações iniciais
