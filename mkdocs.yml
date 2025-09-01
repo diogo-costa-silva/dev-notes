@@ -1,0 +1,31 @@
+site_name: Diogo Dev Notes
+site_description: Notas de programação e dados
+site_url: https://diogo-costa-silva.github.io/dev-notes/
+
+theme:
+  name: material
+  language: pt
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  palette:
+    - scheme: default
+    - scheme: slate
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+repo_url: https://github.com/diogo-costa-silva/dev-notes
+edit_uri: ""   # desativa o botão "Edit this page"
