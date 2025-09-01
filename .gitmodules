@@ -1,0 +1,3 @@
+[submodule "docs/dev-templates"]
+	path = docs/dev-templates
+	url = https://github.com/diogo-costa-silva/dev-templates.git
