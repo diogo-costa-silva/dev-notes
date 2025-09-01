@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy MkDocs Website to GitHub Pages
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: true       # IMPORTANTE se usares dev-templates como submódulo
+          submodules: true
           fetch-depth: 0
       - uses: astral-sh/setup-uv@v3
         with:

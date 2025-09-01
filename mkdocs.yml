@@ -1,4 +1,4 @@
-site_name: Diogo Dev Notes
+site_name: Diogo's Dev Wiki
 site_description: Notas de programação e dados
 site_url: https://diogo-costa-silva.github.io/dev-notes/
 
@@ -40,6 +40,18 @@ theme:
 plugins:
   - search:
       lang: pt
+  - awesome-pages
+  - section-index
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+      locale: pt
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
 
 markdown_extensions:
   - admonition
@@ -72,6 +84,7 @@ repo_url: https://github.com/diogo-costa-silva/dev-notes
 edit_uri: ""   # desativa o botão "Edit this page"
 
 extra:
+  homepage: https://diogo-costa-silva.github.io/dev-notes/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/diogo-costa-silva
@@ -81,4 +94,4 @@ nav:
   - Setup: setup/index.md
   - Languages: languages/index.md
   - Tools: tools/index.md
-  - Data: data/index.md
+  - Data Analysis: data_analysis/index.md

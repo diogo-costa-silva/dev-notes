@@ -6,8 +6,10 @@ Bem-vindo à minha coleção pessoal de templates e guias de desenvolvimento! Es
 
 ## 🚀 [Configuração Inicial](setup/index.md)
 Setup essencial para configurar um ambiente de desenvolvimento do zero:
-- **[🍺 HomeBrew Apps](setup/homebrew/homebrew.md)** - Lista curada de aplicações essenciais para macOS
-- **[🐑 Ollama AI Setup](setup/ollama.md)** - Configuração de modelos de linguagem locais
+- **[🍎 macOS Setup](setup/macos/index.md)** - Configuração específica para macOS
+  - **[🍺 Homebrew Apps](setup/macos/homebrew/homebrew.md)** - Lista curada de aplicações essenciais
+- **[🤖 AI Tools Setup](setup/ai_tools/index.md)** - Configuração de ferramentas de IA
+  - **[🦙 Ollama AI Setup](setup/ai_tools/ollama.md)** - Modelos de linguagem locais
 
 ## 💻 [Linguagens de Programação](languages/index.md)
 Guias específicos e workflows para cada linguagem que uso:
@@ -21,19 +23,21 @@ Guias específicos e workflows para cada linguagem que uso:
 ## 🛠️ [Ferramentas de Desenvolvimento](tools/index.md)
 Configurações para as ferramentas que uso diariamente:
 - **📚 [Git Configuration](tools/git/git.md)** - Configuração completa e aliases úteis
-- **🤖 Claude Code**
-  - [Comandos Essenciais](tools/Claude%20Code/cc_commands.md) - Lista de comandos mais úteis
-  - [Guidelines & Rules](tools/Claude%20Code/cc_rules.md) - Melhores práticas de uso
-  - [MySQL MCP Setup](tools/Claude%20Code/mysql_mcp_setup.md) - Configuração de base de dados
-- **💬 [ChatGPT MCPs](tools/ChatGPT/MCPs_GPT.md)** - Configuração de Model Context Protocol
+- **🤖 [Claude Code](tools/claude_code/index.md)** - Guias e configurações para Claude Code
+  - [Comandos Essenciais](tools/claude_code/cc_commands.md) - Lista de comandos mais úteis
+  - [Guidelines & Rules](tools/claude_code/cc_rules.md) - Melhores práticas de uso
+  - [MySQL MCP Setup](tools/claude_code/mysql_mcp_setup.md) - Configuração de base de dados
+- **🤖 [AI Development Tools](tools/ai_tools/index.md)** - Ferramentas de IA para desenvolvimento
+  - **💬 [ChatGPT MCPs](tools/ai_tools/chatgpt/MCPs_GPT.md)** - Configuração de Model Context Protocol
 
-## 📊 [Análise de Dados](data/index.md)
-Templates e metodologias para projetos de dados:
-- **📈 Data Analysis**
-  - [Metodologia Completa](data/data_analysis/README.md) - Guia estruturado para análise
-  - [Checklist de Projeto](data/data_analysis/checklist.md) - Lista de verificação
-- **🏗️ [Data Modeling](data/Data%20Modeling/data_modeling.md)** - Conceitos e práticas
-- **💾 SQL Templates** - Queries e configurações prontas a usar
+## 📊 [Análise de Dados](data_analysis/index.md)
+Templates e metodologias para projetos completos de análise de dados:
+- **📋 [Analysis Methodology](data_analysis/methodology/index.md)** - Processo estruturado e templates
+  - [Metodologia Completa](data_analysis/methodology/index.md) - Guia metodológico detalhado
+  - [Project Checklist](data_analysis/methodology/checklist.md) - Lista de verificação
+- **🏗️ [Data Modeling](data_analysis/modeling/index.md)** - Conceitos e práticas de modelação
+  - [Data Modeling Concepts](data_analysis/modeling/data_modeling/data_modeling.md) - Conceitos fundamentais
+- **💾 [SQL Templates](data_analysis/sql/index.md)** - Queries e templates SQL para análise
 
 ---
 
