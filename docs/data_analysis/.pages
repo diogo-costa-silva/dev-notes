@@ -1,6 +1,7 @@
 title: Data Analysis & Modeling
 nav:
   - index.md
-  - methodology
-  - modeling
-  - sql
+  - analysis_methodology.md
+  - project_checklist.md
+  - data_modeling_guide.md
+  - sql_templates.md

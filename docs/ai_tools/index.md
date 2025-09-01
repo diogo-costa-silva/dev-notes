@@ -1,107 +1,163 @@
 # 🤖 AI Tools for Development
 
-Ferramentas de inteligência artificial integradas no workflow de desenvolvimento para maximizar produtividade e qualidade de código.
+Ferramentas de inteligência artificial otimizadas para desenvolvimento, com foco nas configurações práticas e workflows testados.
 
-## 💬 **AI Coding Assistants**
+## 🔧 **Core Tools**
 
-- **[Claude Code](claude_code/index.md)** - Guias completos e configurações avançadas
-- **[ChatGPT MCPs](chatgpt/MCPs_GPT.md)** - Model Context Protocol setup
-- **[Ollama Local AI](ollama.md)** - Modelos de linguagem locais para privacidade
+### [🚀 Claude Code](claude_code_complete.md)
+**Configuração completa e workflows avançados para Claude Code**
+- ✅ Comandos essenciais e shortcuts
+- ✅ Guidelines e regras de produtividade
+- ✅ MCP setup para bases de dados MySQL
+- ✅ Plan mode e model switching strategies
+- ✅ Security checks e best practices
 
-## 🚀 **Integration & Setup**
+### [🦙 Ollama Local AI](ollama_local_setup.md) 
+**Setup completo para modelos de linguagem locais**
+- ✅ Installation e configuration via Homebrew
+- ✅ Model management (CodeLlama, Mistral, Phi3)
+- ✅ VS Code integration com Continue
+- ✅ Terminal workflows e automation
+- ✅ Privacy-first local development
 
-### Claude Code
-- **Advanced prompting** techniques
-- **Project context** management  
-- **Custom rules** e guidelines
-- **Database integration** com MCP
+### [💬 ChatGPT MCPs](chatgpt_mcps.md)
+**Model Context Protocol setup para ChatGPT**
+- ✅ MCP server configuration
+- ✅ Database connectivity setup
+- ✅ Context management strategies
+- ✅ Integration workflows
 
-### Local AI Models (Ollama)
-- **Code completion** sem enviar código para cloud
-- **Privacy-first** development
-- **Custom fine-tuning** para projetos específicos
-- **Offline capability** para trabalho sensível
+---
 
-## 🛠️ **Development Workflow Integration**
+## ⚡ **Quick Start Workflows**
 
-### IDE Extensions
-- **GitHub Copilot** - Code suggestions em tempo real
-- **Tabnine** - AI code completion
-- **CodeWhisperer** - Amazon's AI assistant
-- **Cursor** - AI-powered code editor
-
-### Command Line AI
+### Claude Code Daily Workflow
 ```bash
-# GitHub Copilot CLI
-gh copilot suggest "create a REST API with authentication"
-gh copilot explain "git rebase -i HEAD~3"
+# Start Claude Code
+claude --dangerously-skip-permissions
 
-# Ollama local queries
-ollama run codellama "explain this Python function"
-ollama run deepseek-coder "optimize this JavaScript code"
+# Enter plan mode
+# Press Shift + Tab (2x)
+
+# Essential commands
+/mcp                    # Ver servidores MCP registados
+/status                 # Ver contexto atual
+/model opus            # Switch para planning
+/model sonnet          # Switch para implementation
+/clear                 # Reset context
 ```
 
-## 📊 **AI-Powered Code Analysis**
+### Ollama Local Development
+```bash
+# Start Ollama service
+brew services start ollama
 
-### Code Quality
-- **DeepCode** - AI-powered code review
-- **SonarQube** com AI insights
-- **CodeClimate** automated analysis
-- **Snyk** para security vulnerabilities
+# Essential models
+ollama pull llama3:8b
+ollama pull codellama:34b
+ollama pull deepseek-coder:33b
 
-### Documentation Generation
-- **Mintlify** - AI documentation writer
-- **Swimm** - Living documentation
-- **GitBook** com AI assistance
-- **Notion AI** para technical writing
+# Interactive coding
+ollama run codellama
+ollama run deepseek-coder
+```
 
-## 🔒 **Privacy & Security Considerations**
+---
 
-### Data Protection
-- **Local models** para código proprietário
-- **Context filtering** antes de enviar para APIs
-- **Audit logs** de queries enviadas
-- **Team policies** para uso de AI
+## 🛡️ **Security & Privacy**
+
+### Local vs Cloud Trade-offs
+- **Local (Ollama)** → Código proprietário, dados sensíveis
+- **Cloud (Claude/ChatGPT)** → Performance superior, features avançadas
+- **Hybrid approach** → Local para development, Cloud para planning
 
 ### Best Practices
 ```bash
-# Configurar context limits
+# Configuration de context limits
 export CLAUDE_MAX_TOKENS=4000
 export OPENAI_MAX_CONTEXT=8000
 
 # Filter sensitive data
 echo "*.env" >> .aiignore
 echo "secrets/" >> .aiignore
+echo "credentials/" >> .aiignore
 ```
-
-## 🧪 **AI Testing & QA**
-
-### Test Generation
-- **AI-powered unit tests** generation
-- **Test data synthesis** para scenarios complexos
-- **Bug reproduction** automática
-- **Performance testing** com AI insights
-
-### Code Review Automation
-- **Automated PR reviews** com suggestions
-- **Style guide enforcement** 
-- **Security vulnerability** detection
-- **Performance optimization** hints
-
-## 🎯 **Specialized AI Tools**
-
-### Database & SQL
-- **Text to SQL** generation
-- **Query optimization** suggestions
-- **Schema design** assistance
-- **Data migration** planning
-
-### DevOps & Infrastructure
-- **Dockerfile optimization**
-- **CI/CD pipeline** generation
-- **Infrastructure as Code** templates
-- **Monitoring setup** automation
 
 ---
 
-> 🛡️ **Security First:** Sempre revê que tipo de código e dados estás a partilhar com ferramentas AI externas. Usa modelos locais para projetos sensíveis!
+## 🔗 **Integration Patterns**
+
+### Database Connectivity
+- **MySQL MCP** para queries diretas via Claude Code
+- **PostgreSQL integration** para analytics workflows
+- **Local SQLite** para prototyping rápido
+
+### IDE Integration
+- **Continue + Ollama** no VS Code para autocomplete local
+- **Claude Code** para complex reasoning e architecture
+- **GitHub Copilot** para suggestions em tempo real
+
+### Command Line AI
+```bash
+# GitHub Copilot CLI
+gh copilot suggest "create a REST API with FastAPI"
+gh copilot explain "docker-compose up -d"
+
+# Ollama queries
+ollama run codellama "refactor this Python function"
+ollama run deepseek-coder "optimize this SQL query"
+```
+
+---
+
+## 🎯 **Use Case Optimization**
+
+### Planning & Architecture
+- **Claude Code Opus** → Complex system design
+- **Plan mode** → Multi-step implementation breakdown
+- **Security reviews** → Vulnerability assessment
+
+### Code Implementation  
+- **Claude Code Sonnet** → Feature implementation
+- **Ollama CodeLlama** → Local code completion
+- **Continue VS Code** → Real-time suggestions
+
+### Code Review & Documentation
+- **AI-powered reviews** → Automated PR analysis
+- **Documentation generation** → Code explanation
+- **Test generation** → Unit test creation
+
+---
+
+## 📊 **Performance Optimization**
+
+### Context Management
+- **Use `/clear`** regularmente para reduzir hallucinations
+- **Batch similar tasks** para efficiency
+- **Savepoints com Git** durante development
+
+### Model Selection
+- **Opus** → Planning, architecture, complex reasoning
+- **Sonnet** → Implementation, debugging, testing  
+- **Haiku** → Simple queries, quick tasks
+- **Local models** → Privacy-sensitive code
+
+---
+
+## 🚀 **Advanced Workflows**
+
+### Multi-Agent Development
+1. **Claude Opus** → Plan & architect
+2. **Claude Sonnet** → Implement features
+3. **Local Ollama** → Code completion
+4. **Security review** → Final validation
+
+### Database-Driven Development
+1. **MCP connection** → Direct database access
+2. **Schema analysis** → Structure understanding
+3. **Query optimization** → Performance tuning
+4. **Data validation** → Quality assurance
+
+---
+
+> 🔐 **Security First:** Para código proprietário, usa sempre modelos locais. Para features avançadas e planning, cloud models com context filtering adequado.

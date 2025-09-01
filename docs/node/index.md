@@ -4,7 +4,20 @@ Setup completo e workflows modernos para desenvolvimento Node.js com foco em per
 
 ## 📦 **Package Management & Setup**
 
-- **[Node.js Configuration](node.md)** - Setup completo do ambiente Node.js moderno
+### Node.js Installation
+```bash
+# Install Node.js via Homebrew (recommended)
+brew install node
+
+# Verify installation
+node --version
+npm --version
+
+# Alternative: Use nvm for version management
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+nvm install --lts
+nvm use --lts
+```
 
 ## ⚡ **Modern JavaScript Stack**
 
@@ -22,6 +35,10 @@ npm init -y
 npm install -D typescript @types/node
 npm install -D eslint prettier vitest
 npx tsc --init
+
+# Alternative: Use pnpm (recommended)
+pnpm init
+pnpm add -D typescript @types/node eslint prettier vitest
 ```
 
 ## 🏗️ **Development Workflow**
@@ -66,28 +83,127 @@ npx tsc --init
 - **Nest.js** - Enterprise-grade com decorators
 - **Hapi.js** - Configuration-centric
 
-### API Development
-```javascript
-// Fastify example - high performance
-const fastify = require('fastify')({ logger: true })
+### Express.js Quick Setup
+```bash
+# Install Express with TypeScript
+pnpm add express
+pnpm add -D @types/express nodemon tsx
 
-fastify.get('/', async (request, reply) => {
-  return { hello: 'world' }
-})
+# Basic server structure
+mkdir src
+touch src/index.ts
+```
 
-const start = async () => {
-  await fastify.listen({ port: 3000 })
-}
-start()
+```typescript
+// src/index.ts
+import express from 'express';
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Middleware
+app.use(express.json());
+
+// Routes
+app.get('/', (req, res) => {
+  res.json({ message: 'Hello, Node.js!' });
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 ```
 
 ## 🧪 **Testing Strategy**
 
-- **Vitest** - Testing framework ultra-rápido
-- **Jest** - Testing framework popular
-- **Supertest** para API testing
-- **Playwright** para E2E testing
+### Testing Setup
+```bash
+# Install testing dependencies
+pnpm add -D vitest supertest @types/supertest
+
+# Basic test setup
+mkdir tests
+touch tests/api.test.ts
+```
+
+```typescript
+// tests/api.test.ts
+import { describe, it, expect } from 'vitest';
+import request from 'supertest';
+import app from '../src/app';
+
+describe('API Endpoints', () => {
+  it('should return hello message', async () => {
+    const response = await request(app)
+      .get('/')
+      .expect(200);
+    
+    expect(response.body.message).toBe('Hello, Node.js!');
+  });
+});
+```
+
+## 🚀 **Production Deployment**
+
+### Docker Setup
+```dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+COPY pnpm-lock.yaml ./
+
+# Install pnpm and dependencies
+RUN npm install -g pnpm
+RUN pnpm install --frozen-lockfile
+
+# Copy source code
+COPY . .
+
+# Build application
+RUN pnpm build
+
+EXPOSE 3000
+
+CMD ["node", "dist/index.js"]
+```
+
+### Environment Configuration
+```bash
+# .env
+NODE_ENV=development
+PORT=3000
+DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+```
 
 ---
 
-> ⚡ **Performance Tip:** Usa pnpm para gestão de pacotes e tsx para desenvolvimento TypeScript direto!
+## 📋 **Best Practices Checklist**
+
+### ✅ **Development**
+- Use **TypeScript** para type safety
+- Configure **ESLint + Prettier** para code quality
+- Setup **hot reloading** com nodemon/tsx
+- Implement **proper error handling**
+- Use **environment variables** para configuration
+
+### ✅ **Performance**
+- Choose **pnpm** para faster installs
+- Use **clustering** for multi-core utilization
+- Implement **caching strategies**
+- Optimize **database queries**
+- Use **compression middleware**
+
+### ✅ **Security**
+- Validate **input data** sempre
+- Use **helmet** para security headers
+- Implement **rate limiting**
+- Keep **dependencies updated**
+- Never commit **secrets** to version control
+
+---
+
+> ⚡ **Performance Tip:** Usa pnpm para gestão de pacotes e tsx para desenvolvimento TypeScript direto. Para production, considera Fastify se performance é crítica!

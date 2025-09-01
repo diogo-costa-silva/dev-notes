@@ -6,39 +6,40 @@ Bem-vindo à minha coleção pessoal de templates e guias de desenvolvimento! Es
 
 ## 📊 [Data Analysis](data_analysis/index.md)
 Metodologias estruturadas e templates para projetos completos de análise de dados:
-- **[📋 Analysis Methodology](data_analysis/methodology/index.md)** - Processo estruturado e templates
-- **[🏗️ Data Modeling](data_analysis/modeling/index.md)** - Conceitos e práticas de modelação  
-- **[💾 SQL Templates](data_analysis/sql/index.md)** - Queries e templates SQL para análise
+- **[📋 Analysis Methodology](data_analysis/analysis_methodology.md)** - Processo CRISP-DM completo
+- **[✅ Project Checklist](data_analysis/project_checklist.md)** - Checklist sequencial para analytics
+- **[🏗️ Data Modeling](data_analysis/data_modeling_guide.md)** - Conceitos e práticas de modelação  
+- **[💾 SQL Templates](data_analysis/sql_templates.md)** - Queries e templates SQL para análise
 
 ## 🐍 [Python Development](python/index.md)
 Setup moderno e workflows para desenvolvimento Python:
-- **[⚡ UV Complete Guide](python/uv.md)** - Gestor de pacotes Python ultra-rápido
-- **[🐍 Python Setup](python/python.md)** - Configuração completa do ambiente
-- **[🔄 Complete Workflow](python/python_workflow.md)** - Do setup ao deploy
+- **[⚡ UV Complete Guide](python/uv_complete_guide.md)** - Gestor de pacotes Python ultra-rápido
+- **[🔄 Complete Workflow](python/complete_workflow.md)** - Do setup ao deploy
+- **[🐍 Python Workflow](python/python_workflow.md)** - Templates e best practices
 
 ## 🟢 [Node.js Development](node/index.md)
 Setup completo e workflows modernos para Node.js:
-- **[📦 Node.js Configuration](node/node.md)** - Setup completo do ambiente Node.js moderno
 - **Package management** com pnpm, npm e performance comparison
 - **Modern JavaScript stack** com TypeScript e tooling
 
 ## 🍎 [macOS Development Setup](macos/index.md)
 Configuração e otimização do macOS para desenvolvimento:
-- **[🍺 Homebrew Complete Setup](macos/homebrew/homebrew.md)** - Lista curada de aplicações essenciais
+- **Homebrew setup** completo com aplicações essenciais
 - **System optimization** e tweaks para produtividade
 - **Security & privacy** considerations para desenvolvimento
 
 ## 📚 [Git Configuration & Workflows](git/index.md)
 Configuração avançada e workflows modernos:
-- **[📚 Git Complete Setup](git/git.md)** - Configuração completa com aliases
+- **Git setup** completo com SSH e aliases
+- **GitHub CLI workflows** para eficiência
 - **Advanced workflows** (GitHub Flow, GitFlow)
 - **Commit best practices** e conventional commits
 
 ## 🤖 [AI Tools for Development](ai_tools/index.md)
 Ferramentas de IA integradas no workflow de desenvolvimento:
-- **[🤖 Claude Code](ai_tools/claude_code/index.md)** - Guias e configurações avançadas
-- **[💬 ChatGPT MCPs](ai_tools/chatgpt/MCPs_GPT.md)** - Model Context Protocol setup
-- **[🦙 Ollama Local AI](ai_tools/ollama.md)** - Modelos locais para privacidade
+- **[🚀 Claude Code](ai_tools/claude_code_complete.md)** - Guias e configurações avançadas
+- **[🦙 Ollama Local AI](ai_tools/ollama_local_setup.md)** - Setup completo para modelos locais
+- **[💬 ChatGPT MCPs](ai_tools/chatgpt_mcps.md)** - Model Context Protocol setup
 
 ---
 
