@@ -79,8 +79,8 @@ extra:
 nav:
   - Início: index.md
   - Templates:
-      - Visão Geral: templates/index.md
-      - Setup: templates/setup/index.md
-      - Linguagens: templates/languages/index.md
-      - Ferramentas: templates/tools/index.md
-      - Dados: templates/data/index.md
+      - Visão Geral: guides/index.md
+      - Setup: guides/setup/index.md
+      - Linguagens: guides/languages/index.md
+      - Ferramentas: guides/tools/index.md
+      - Dados: guides/data/index.md
