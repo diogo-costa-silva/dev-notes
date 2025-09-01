@@ -40,13 +40,6 @@ theme:
 plugins:
   - search:
       lang: pt
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  - minify:
-      minify_html: true
-  - awesome-pages
-  - section-index
 
 markdown_extensions:
   - admonition
@@ -83,5 +76,11 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/diogo-costa-silva
 
-# Navegação será gerida automaticamente pelo awesome-pages plugin
-# nav:
+nav:
+  - Início: index.md
+  - Templates:
+      - Visão Geral: templates/index.md
+      - Setup: templates/setup/index.md
+      - Linguagens: templates/languages/index.md
+      - Ferramentas: templates/tools/index.md
+      - Dados: templates/data/index.md
