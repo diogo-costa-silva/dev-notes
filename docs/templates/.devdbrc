@@ -1,0 +1,29 @@
+[
+	{
+		"name": "tests_db",
+		"type": "mysql",
+		"host": "127.0.0.1",
+		"port": "3306",
+		"username": "root",
+		"password": "podimon10",
+		"database": "tests_db"
+	},
+    {
+		"name": "Datacamp",
+		"type": "mysql",
+		"host": "127.0.0.1",
+		"port": "3306",
+		"username": "root",
+		"password": "podimon10",
+		"database": "Datacamp"
+	},
+    {
+		"name": "MotoGP",
+		"type": "mysql",
+		"host": "127.0.0.1",
+		"port": "3306",
+		"username": "root",
+		"password": "podimon10",
+		"database": "motogp_db"
+	}
+]
