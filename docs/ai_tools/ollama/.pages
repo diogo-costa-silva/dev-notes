@@ -1,0 +1,5 @@
+title: Ollama Local AI
+nav:
+  - index.md
+  - ollama.md
+  - ollama_local_setup.md

@@ -1,6 +1,8 @@
 site_name: Diogo's Dev Wiki
 site_description: Notas de programação e dados
 site_url: https://diogo-costa-silva.github.io/dev-notes/
+repo_url: https://github.com/diogo-costa-silva/dev-notes
+edit_uri: ""  # mantém desativado
 
 theme:
   name: material
@@ -19,8 +21,8 @@ theme:
     - search.highlight
     - search.share
     - toc.integrate
+    - toc.follow
   palette:
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: blue grey
@@ -28,7 +30,6 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: blue grey
@@ -58,6 +59,7 @@ markdown_extensions:
   - toc:
       permalink: true
       title: Nesta página
+      toc_depth: 3
   - pymdownx.details
   - pymdownx.superfences:
       custom_fences:
@@ -69,7 +71,6 @@ markdown_extensions:
       line_spans: __span
       pygments_lang_class: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.tasklist:
@@ -80,20 +81,8 @@ markdown_extensions:
   - attr_list
   - md_in_html
 
-repo_url: https://github.com/diogo-costa-silva/dev-notes
-edit_uri: ""   # desativa o botão "Edit this page"
-
 extra:
   homepage: https://diogo-costa-silva.github.io/dev-notes/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/diogo-costa-silva
-
-nav:
-  - Home: index.md
-  - Data Analysis: data_analysis/index.md
-  - Python: python/index.md
-  - Node.js: node/index.md
-  - macOS: macos/index.md
-  - Git: git/index.md
-  - AI Tools: ai_tools/index.md

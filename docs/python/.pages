@@ -1,7 +1,4 @@
-title: Python Development
+title: Python
 nav:
   - index.md
-  - uv_complete_guide.md
-  - complete_workflow.md
-  - uv.md
-  - python_workflow.md
+  - python.md
